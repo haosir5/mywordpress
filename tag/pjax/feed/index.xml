@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pjax &#8211; 豪先生的博客</title>
+	<atom:link href="https://haosir5.github.io/tag/pjax/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:49 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+
+<image>
+	<url>https://haosir5.github.io/wp-content/uploads/2021/12/cropped-user_img-1-32x32.jpg</url>
+	<title>pjax &#8211; 豪先生的博客</title>
+	<link>https://haosir5.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wordress博客网站使用Aplayer播放器与Pjax解决网页跳转时音乐重新播放</title>
+		<link>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8%e4%b8%8epjax%e8%a7%a3%e5%86%b3%e7%bd%91%e9%a1%b5%e8%b7%b3%e8%bd%ac%e6%97%b6%e9%9f%b3%e4%b9%90%e9%87%8d/</link>
+					<comments>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8%e4%b8%8epjax%e8%a7%a3%e5%86%b3%e7%bd%91%e9%a1%b5%e8%b7%b3%e8%bd%ac%e6%97%b6%e9%9f%b3%e4%b9%90%e9%87%8d/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 07:41:29 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<category><![CDATA[Aplayer]]></category>
+		<category><![CDATA[pjax]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=32</guid>
+
+					<description><![CDATA[在Wordress的主题里面的h&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>在Wordress的主题里面的header.php里面放入我给的3行代码即可</p>
+
+
+
+<p>如果不知道header.php在哪里，可以参考我的路径：</p>
+
+
+
+<p><span class="has-inline-color has-vivid-cyan-blue-color">wp-content/themes/dashscroll/header.php</span></p>
+
+
+
+<p></p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color"> wp-content</span>/          </p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color">themes</span>/       Wordress的网页主题</p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color">dashscroll</span>/    主题     博主当前使用的主题</p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color">header.php</span>        头部文件</p>
+
+
+
+<p></p>
+
+
+
+<p>在<span class="has-inline-color has-vivid-red-color">header.php</span>里面中的<span class="has-inline-color has-vivid-red-color">body</span>前面添加下面代码</p>
+
+
+
+<p><span class="has-inline-color has-luminous-vivid-amber-color">注意</span>:jquery.js要在jquery.pjax.js前面</p>
+
+
+
+<pre class="wp-block-code"><code>
+&lt;!--jquery-->
+&lt;script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">&lt;/script>
+&lt;!--jquery.pjax.js-->
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.0/jquery.pjax.js">&lt;/script>
+&lt;!--替换的容器-->
+&lt;script type="text/javascript">
+    $(document).pjax('a', '#page', {fragment:'#page', timeout:8000});
+&lt;/script></code></pre>
+
+
+
+<p>播放器重新播放，但是还是有一些问题存在，比如评论发送时，就会使播放器重新刷新播放，(我也是一名小白，以后解决了就相继发出来)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8%e4%b8%8epjax%e8%a7%a3%e5%86%b3%e7%bd%91%e9%a1%b5%e8%b7%b3%e8%bd%ac%e6%97%b6%e9%9f%b3%e4%b9%90%e9%87%8d/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

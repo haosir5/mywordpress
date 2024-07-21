@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	「Wordress博客使插件添加音乐播放器」的评论	</title>
+	<atom:link href="https://haosir5.github.io/2021/12/08/wordress%E5%8D%9A%E5%AE%A2%E4%BD%BF%E6%8F%92%E4%BB%B6%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e4%bd%bf%e6%8f%92%e4%bb%b6%e6%b7%bb%e5%8a%a0%e9%9f%b3%e4%b9%90%e6%92%ad%e6%94%be%e5%99%a8/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+</channel>
+</rss>

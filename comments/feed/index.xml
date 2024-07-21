@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	「豪先生的博客」的评论	</title>
+	<atom:link href="https://haosir5.github.io/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+	<item>
+		<title>
+		haosirl 对《 关于Vue2cli使用Vant、element-ui插件需要关注的事项 》的评论		</title>
+		<link>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8evue2cli%e4%bd%bf%e7%94%a8vant%e3%80%81element-ui%e6%8f%92%e4%bb%b6%e9%9c%80%e8%a6%81%e5%85%b3%e6%b3%a8%e7%9a%84%e4%ba%8b%e9%a1%b9/#comment-3</link>
+
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:34:21 +0000</pubDate>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=52#comment-3</guid>
+
+					<description><![CDATA[回复给 &lt;a href=&quot;https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8evue2cli%e4%bd%bf%e7%94%a8vant%e3%80%81element-ui%e6%8f%92%e4%bb%b6%e9%9c%80%e8%a6%81%e5%85%b3%e6%b3%a8%e7%9a%84%e4%ba%8b%e9%a1%b9/#comment-2&quot;&gt;test&lt;/a&gt;。
+
+3q]]></description>
+			<content:encoded><![CDATA[<p>回复给 <a href="https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8evue2cli%e4%bd%bf%e7%94%a8vant%e3%80%81element-ui%e6%8f%92%e4%bb%b6%e9%9c%80%e8%a6%81%e5%85%b3%e6%b3%a8%e7%9a%84%e4%ba%8b%e9%a1%b9/#comment-2">test</a>。</p>
+<p>3q</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		test 对《 关于Vue2cli使用Vant、element-ui插件需要关注的事项 》的评论		</title>
+		<link>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8evue2cli%e4%bd%bf%e7%94%a8vant%e3%80%81element-ui%e6%8f%92%e4%bb%b6%e9%9c%80%e8%a6%81%e5%85%b3%e6%b3%a8%e7%9a%84%e4%ba%8b%e9%a1%b9/#comment-2</link>
+
+		<dc:creator><![CDATA[test]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:24:28 +0000</pubDate>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=52#comment-2</guid>
+
+					<description><![CDATA[test]]></description>
+			<content:encoded><![CDATA[<p>test</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

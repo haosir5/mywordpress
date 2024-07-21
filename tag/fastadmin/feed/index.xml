@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Fastadmin &#8211; 豪先生的博客</title>
+	<atom:link href="https://haosir5.github.io/tag/fastadmin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+
+<image>
+	<url>https://haosir5.github.io/wp-content/uploads/2021/12/cropped-user_img-1-32x32.jpg</url>
+	<title>Fastadmin &#8211; 豪先生的博客</title>
+	<link>https://haosir5.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Fastadmin后台关联表的细节</title>
+		<link>https://haosir5.github.io/2021/12/08/fastadmin%e5%90%8e%e5%8f%b0%e5%85%b3%e8%81%94%e8%a1%a8%e7%9a%84%e7%bb%86%e8%8a%82/</link>
+					<comments>https://haosir5.github.io/2021/12/08/fastadmin%e5%90%8e%e5%8f%b0%e5%85%b3%e8%81%94%e8%a1%a8%e7%9a%84%e7%bb%86%e8%8a%82/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:10:42 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=60</guid>
+
+					<description><![CDATA[1、假如现有一个admin表,表&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p><br>1、假如现有一个admin表,表内容如下</p>
+
+
+
+<p>admin表</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>id</td><td>name</td><td>hobby_id</td></tr><tr><td>1</td><td>豪先生</td><td>2</td></tr></tbody></table></figure>
+
+
+
+<p>还有一个hobby表,</p>
+
+
+
+<p>hobby表</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>id</td><td>hobby</td></tr><tr><td>1</td><td>打篮球，打乒乓</td></tr></tbody></table></figure>
+
+
+
+<p></p>
+
+
+
+<p>（在线命令行在插件里面进行安装）</p>
+
+
+
+<p>2、先把2个表用<span class="has-inline-color has-vivid-red-color">在线命令行</span>导进去，（注意：要先引入表才关联，之前因为没有先引入表就关联，就报错了）</p>
+
+
+
+<p>3、进行2操作之后再进行关联查询</p>
+
+
+
+<p>4、相对应的操作可以去fastadmin开发文档查看操作</p>
+
+
+
+<p>5、或者参考一下其他人的操作过程</p>
+
+
+
+<p><a href="https://ask.fastadmin.net/article/6504.html">新手入门：使用在线命令生成关联模型 &#8211; FastAdmin问答社区</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/fastadmin%e5%90%8e%e5%8f%b0%e5%85%b3%e8%81%94%e8%a1%a8%e7%9a%84%e7%bb%86%e8%8a%82/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>关于Fastadmin后台表格内容的修改</title>
+		<link>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8efastadmin%e5%90%8e%e5%8f%b0%e8%a1%a8%e6%a0%bc%e5%86%85%e5%ae%b9%e7%9a%84%e4%bf%ae%e6%94%b9/</link>
+					<comments>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8efastadmin%e5%90%8e%e5%8f%b0%e8%a1%a8%e6%a0%bc%e5%86%85%e5%ae%b9%e7%9a%84%e4%bf%ae%e6%94%b9/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:09:52 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=58</guid>
+
+					<description><![CDATA[1、想修改fastadmin表格&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1、想修改fastadmin表格的内容,在public\assets\js\backend里面有对应表格的内容</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/12/QQ%E5%9B%BE%E7%89%8720211205170128.jpg" alt="此图片的alt属性为空；文件名为QQ图片20211205170128.jpg"/></figure>
+
+
+
+<p>下面是表格里需要修改的内容</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/12/QQ%E5%9B%BE%E7%89%8720211205170122-1024x347.png" alt="此图片的alt属性为空；文件名为QQ图片20211205170122-1024x347.png"/></figure>
+
+
+
+<p></p>
+
+
+
+<p>注意：field是数据库字段,title是fastadmin表格显示的字段</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8efastadmin%e5%90%8e%e5%8f%b0%e8%a1%a8%e6%a0%bc%e5%86%85%e5%ae%b9%e7%9a%84%e4%bf%ae%e6%94%b9/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fastadmin后台</title>
+		<link>https://haosir5.github.io/2021/12/08/fastadmin%e5%90%8e%e5%8f%b0/</link>
+					<comments>https://haosir5.github.io/2021/12/08/fastadmin%e5%90%8e%e5%8f%b0/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:09:03 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=56</guid>
+
+					<description><![CDATA[1、基于ThinkPHP和Boo&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1、基于ThinkPHP和Bootstrap的快速后台开发框架</p>
+
+
+
+<p><a href="https://doc.fastadmin.net/">FastAdmin开发文档</a></p>
+
+
+
+<p>2、根据文档来开发自己的需求</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/fastadmin%e5%90%8e%e5%8f%b0/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>haosirl &#8211; 豪先生的博客</title>
+	<atom:link href="https://haosir5.github.io/author/haosirl/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+
+<image>
+	<url>https://haosir5.github.io/wp-content/uploads/2021/12/cropped-user_img-1-32x32.jpg</url>
+	<title>haosirl &#8211; 豪先生的博客</title>
+	<link>https://haosir5.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>index/user/模块登陆后，怎么在CMS页面判断是否是会员登陆</title>
+		<link>https://haosir5.github.io/2021/12/24/index-user-%e6%a8%a1%e5%9d%97%e7%99%bb%e9%99%86%e5%90%8e%ef%bc%8c%e6%80%8e%e4%b9%88%e5%9c%a8cms%e9%a1%b5%e9%9d%a2%e5%88%a4%e6%96%ad%e6%98%af%e5%90%a6%e6%98%af%e4%bc%9a%e5%91%98%e7%99%bb%e9%99%86/</link>
+					<comments>https://haosir5.github.io/2021/12/24/index-user-%e6%a8%a1%e5%9d%97%e7%99%bb%e9%99%86%e5%90%8e%ef%bc%8c%e6%80%8e%e4%b9%88%e5%9c%a8cms%e9%a1%b5%e9%9d%a2%e5%88%a4%e6%96%ad%e6%98%af%e5%90%a6%e6%98%af%e4%bc%9a%e5%91%98%e7%99%bb%e9%99%86/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 06:19:27 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=98</guid>
+
+					<description><![CDATA[由于插件中的控制器没有继承自Fr&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>由于插件中的控制器没有继承自<code>Frontend</code>，所以默认没有判断会员登录。如果需要判断会员是否登录，可以使用</p>
+
+
+
+<pre class="wp-block-code"><code>$auth = \app\common\library\Auth::instance();
+$token = \think\Cookie::get('token');
+$auth->init($token);
+$isLogin = $auth->isLogin();</code></pre>
+
+
+
+<p>后面有计划在插件的基类控制器中添加获取当前登录会员的功能。敬请关注。</p>
+
+
+
+<p>$auth = \app\common\library\Auth::instance();<br>$token = \think\Cookie::get(&#8216;token&#8217;);<br>$auth->init($token);<br>$auth->getUserinfo();<br>可以获取会员的基本信息~~~</p>
+
+
+
+<p>你这功能虽然实现了，但有很大的安全问题，因为Cookie是可以伪造的，如果不进行鉴权访问，很容易被越权访问。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/index-user-%e6%a8%a1%e5%9d%97%e7%99%bb%e9%99%86%e5%90%8e%ef%bc%8c%e6%80%8e%e4%b9%88%e5%9c%a8cms%e9%a1%b5%e9%9d%a2%e5%88%a4%e6%96%ad%e6%98%af%e5%90%a6%e6%98%af%e4%bc%9a%e5%91%98%e7%99%bb%e9%99%86/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fastadmin 后台编辑，或者添加的时候，出现的问题</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin-%e5%90%8e%e5%8f%b0%e7%bc%96%e8%be%91%ef%bc%8c%e6%88%96%e8%80%85%e6%b7%bb%e5%8a%a0%e7%9a%84%e6%97%b6%e5%80%99%ef%bc%8c%e5%87%ba%e7%8e%b0%e7%9a%84%e9%97%ae%e9%a2%98/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin-%e5%90%8e%e5%8f%b0%e7%bc%96%e8%be%91%ef%bc%8c%e6%88%96%e8%80%85%e6%b7%bb%e5%8a%a0%e7%9a%84%e6%97%b6%e5%80%99%ef%bc%8c%e5%87%ba%e7%8e%b0%e7%9a%84%e9%97%ae%e9%a2%98/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 06:18:17 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=93</guid>
+
+					<description><![CDATA[1.情况如图：编辑的时候，这个关&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1.情况如图：编辑的时候，这个关联id，默认查出来的是用户昵称，如果要显示用户名，该怎么修改，不要着急，听我慢慢道来</p>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="995" height="568" src="https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144454063-479298627.png" alt="" class="wp-image-94" srcset="https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144454063-479298627.png 995w, https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144454063-479298627-300x171.png 300w, https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144454063-479298627-768x438.png 768w, https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144454063-479298627-670x382.png 670w" sizes="(max-width: 995px) 100vw, 995px" /></figure>
+
+
+
+<p>2.首先要找到 编辑页面，检查问题</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="475" src="https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144823607-272854869-1024x475.png" alt="" class="wp-image-96" srcset="https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144823607-272854869-1024x475.png 1024w, https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144823607-272854869-300x139.png 300w, https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144823607-272854869-768x356.png 768w, https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144823607-272854869-670x311.png 670w, https://haosir5.github.io/wp-content/uploads/2021/12/1422806-20181025144823607-272854869.png 1489w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>3.完成</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin-%e5%90%8e%e5%8f%b0%e7%bc%96%e8%be%91%ef%bc%8c%e6%88%96%e8%80%85%e6%b7%bb%e5%8a%a0%e7%9a%84%e6%97%b6%e5%80%99%ef%bc%8c%e5%87%ba%e7%8e%b0%e7%9a%84%e9%97%ae%e9%a2%98/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fastadmin上传多个图片的前端代码</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin%e4%b8%8a%e4%bc%a0%e5%a4%9a%e4%b8%aa%e5%9b%be%e7%89%87%e7%9a%84%e5%89%8d%e7%ab%af%e4%bb%a3%e7%a0%81/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin%e4%b8%8a%e4%bc%a0%e5%a4%9a%e4%b8%aa%e5%9b%be%e7%89%87%e7%9a%84%e5%89%8d%e7%ab%af%e4%bb%a3%e7%a0%81/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 06:16:45 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=91</guid>
+
+					<description><![CDATA[如果一个商品，需要上传多个图片，&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>如果一个商品，需要上传多个图片，那么如此定义html‘代码即可’</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;div class="form-group">
+		&lt;label for="c-thumb" class="control-label col-xs-12 col-sm-2">图片:&lt;/label>
+		&lt;div class="col-xs-12 col-sm-8">
+				&lt;div class="input-group">
+					&lt;input id="c-thumb" class="form-control" size="50" name="row&#91;thumb]" type="text" value="" />
+					&lt;div class="input-group-addon no-border no-padding">
+						&lt;span>&lt;button type="button" id="plupload-imagethumb" class="btn btn-danger plupload" data-input-id="c-thumb" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/webp" data-multiple="true" data-preview-id="p-thumb">&lt;i class="fa fa-upload">&lt;/i>上传&lt;/button>&lt;/span>
+					&lt;/div>
+					&lt;span class="msg-box n-right">&lt;/span>
+				&lt;/div>
+		        &lt;ul class="row list-inline plupload-preview" id="p-thumb">&lt;/ul>
+		&lt;/div>
+&lt;/div></code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin%e4%b8%8a%e4%bc%a0%e5%a4%9a%e4%b8%aa%e5%9b%be%e7%89%87%e7%9a%84%e5%89%8d%e7%ab%af%e4%bb%a3%e7%a0%81/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fastadmin 海外服务器离线安装插件失败解决方案</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin-%e6%b5%b7%e5%a4%96%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%a6%bb%e7%ba%bf%e5%ae%89%e8%a3%85%e6%8f%92%e4%bb%b6%e5%a4%b1%e8%b4%a5%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin-%e6%b5%b7%e5%a4%96%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%a6%bb%e7%ba%bf%e5%ae%89%e8%a3%85%e6%8f%92%e4%bb%b6%e5%a4%b1%e8%b4%a5%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 06:16:00 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=88</guid>
+
+					<description><![CDATA[Fastadmin 是一款Thi&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>Fastadmin 是一款Thinkphp 5.0二开的简洁好用PHP后端开发脚手架套件。</p>
+
+
+
+<p>问题说明：<br>使用Fastadmin 作为服务端开发程序，需要用到系统自带的插件，由于使用的是海外服务器，Fastadmin官方QA写了，海外服务器无法在线安装插件，测试发现离线安装也失败，提示“未知的数据格式”。</p>
+
+
+
+<p>解决办法：<br>/vendor/karsonzhang/fastadmin-addons/src/addons/Service.php</p>
+
+
+
+<p>搜索</p>
+
+
+
+<pre class="wp-block-code"><code>Service::valid($params);</code></pre>
+
+
+
+<p>注释掉</p>
+
+
+
+<p>就可以安装了</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin-%e6%b5%b7%e5%a4%96%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%a6%bb%e7%ba%bf%e5%ae%89%e8%a3%85%e6%8f%92%e4%bb%b6%e5%a4%b1%e8%b4%a5%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>fastadmin,配置SMTP邮件,踩坑笔记</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin%e9%85%8d%e7%bd%aesmtp%e9%82%ae%e4%bb%b6%e8%b8%a9%e5%9d%91%e7%ac%94%e8%ae%b0/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin%e9%85%8d%e7%bd%aesmtp%e9%82%ae%e4%bb%b6%e8%b8%a9%e5%9d%91%e7%ac%94%e8%ae%b0/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 06:15:17 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=86</guid>
+
+					<description><![CDATA[php做发送邮件,有个叫phpm&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>php做发送邮件,有个叫phpmailer的插件..而fastadmin正是用的这一插件.</p>
+
+
+
+<p>首先是准备工作,你要把你的qq邮箱设置一下开启SMTP邮件,qq邮箱的设置位置在:账户/账户 这一选项下</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://oscimg.oschina.net/oscnet/up-1b60cc1e10c75aa281db41d5c26fb72d16c.png" alt=""/></figure>
+
+
+
+<p>这里如果你手机绑定了qq安全中心的,下面是一个什么链接,需要你填写你的手机QQ安全中心app的即时验证码&#8230;</p>
+
+
+
+<p>然后接着你就可以在这里生成一个授权码&#8230;</p>
+
+
+
+<p>接着填写下去,完事儿了.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://oscimg.oschina.net/oscnet/up-3c96d6e4618846a36458695fb49736ec35e.png" alt=""/></figure>
+
+
+
+<p>问题1:报错__autoload() is deprecated, use spl_autoload_register() instead</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://oscimg.oschina.net/oscnet/up-7ef16375ed53eb873b080f01e0c5785d4ec.png" alt=""/></figure>
+
+
+
+<p>原因:php版本问题,php版本过高了</p>
+
+
+
+<p>解决方法:作为程序员,我不可能去将就低版本..直接把代码给他注释掉,完美.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://oscimg.oschina.net/oscnet/up-de609f50567a69946379e439bbfa2506e22.png" alt=""/></figure>
+
+
+
+<p>问题2:报错&nbsp;SMTP Error: Could not authenticate</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://oscimg.oschina.net/oscnet/up-870b1f19766161fd0ca41efe93cd1f15093.png" alt=""/></figure>
+
+
+
+<p>问题:参数配置错误,检查配置中你的邮箱和你填写的那个密码,是否是邮箱账号的授权码&#8230;别直接当憨憨把邮箱密码拿来用了</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin%e9%85%8d%e7%bd%aesmtp%e9%82%ae%e4%bb%b6%e8%b8%a9%e5%9d%91%e7%ac%94%e8%ae%b0/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>fastadmin上传文件显示图片文件格式</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin%e4%b8%8a%e4%bc%a0%e6%96%87%e4%bb%b6%e6%98%be%e7%a4%ba%e5%9b%be%e7%89%87%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8f/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin%e4%b8%8a%e4%bc%a0%e6%96%87%e4%bb%b6%e6%98%be%e7%a4%ba%e5%9b%be%e7%89%87%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8f/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 06:09:19 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=76</guid>
+
+					<description><![CDATA[效果： 在fastadmin后台&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>效果：</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="266" height="376" src="https://haosir5.github.io/wp-content/uploads/2021/12/20210828104918238.png" alt="" class="wp-image-77" srcset="https://haosir5.github.io/wp-content/uploads/2021/12/20210828104918238.png 266w, https://haosir5.github.io/wp-content/uploads/2021/12/20210828104918238-212x300.png 212w" sizes="(max-width: 266px) 100vw, 266px" /></figure>
+
+
+
+<p><strong>在fastadmin后台生成的常规管理中的附件管理中有源码，可以借鉴，如果不想使用那种应该怎么办，</strong></p>
+
+
+
+<pre class="wp-block-code"><code>{field: 't_files', title: __('T_files'),operate: false, events: Table.api.events.image,         
+    formatter: Table.api.formatter.image, formatter: function (value){
+    //console.log(value);
+    if (value != "" &amp;&amp; value != undefined){
+           var strs = value.split('.');
+           var end = strs.pop()
+            //console.log(end)
+            var ext_arr = &#91;'jpg','png','jpeg','bmp','gif'];
+            //console.log(end)
+            if(ext_arr.includes(end.toLowerCase())){
+                  return '&lt;a href="' +value+ '" target="_blank">&lt;img src="'+value+'" alt="" style="max-height:50px;max-width:120px">'
+                  }else{
+                    //src="/入口文件/ajax/icon?
+                        return '&lt;a href="' +value+ '" target="_blank">&lt;img src="/wcJirQZDXT.php/ajax/icon?suffix='+end+'" alt="" style="max-height:90px;max-width:120px">'
+                        }
+               }
+         }
+    },</code></pre>
+
+
+
+<p>效果与之相同，如果想添加上传的文件类型可以在application/extra/upland.php下修改，在其中添加就好了</p>
+
+
+
+<pre class="wp-block-code"><code>/**
+     * 可上传的文件类型
+     */
+    'mimetype'  => 'jpg,png,bmp,jpeg,gif,zip,rar,xls,xlsx,wav,mp4,mp3,pdf,docx,doc,pptx',</code></pre>
+
+
+
+<p>文件大小也在同一位置修改，但修改的大小一定要在PHP限制范围之内，如果觉得太小可以在php.ini下修改</p>
+
+
+
+<pre class="wp-block-code"><code> /**
+     * 最大可上传大小
+     */
+    'maxsize'   => '30mb',</code></pre>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin%e4%b8%8a%e4%bc%a0%e6%96%87%e4%bb%b6%e6%98%be%e7%a4%ba%e5%9b%be%e7%89%87%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8f/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Fastadmin tab列表的按钮</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin-tab%e5%88%97%e8%a1%a8%e7%9a%84%e6%8c%89%e9%92%ae/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin-tab%e5%88%97%e8%a1%a8%e7%9a%84%e6%8c%89%e9%92%ae/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 05:58:01 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=68</guid>
+
+					<description><![CDATA[一、tab列表的按钮 （1）按钮&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>一、tab列表的按钮</p>
+
+
+
+<pre class="wp-block-code"><code>{field: 'operate', title: ('Operate'), table: table, events: Table.api.events.operate, buttons:&#91; { name: 'detail',//名称 text: ('Send_coupon'),//文本
+title: ('Send_coupon'),//标题 classname: 'btn btn-info btn-xs btn-list btn-dialog',//样式 icon: 'fa fa-folder-o',//图标 url: 'litestore/litestorecoupon/send' },//跳转地址 { name: 'detail', text: ('Show_coupon'),
+title: __('Show_coupon'),
+classname: 'btn btn-xs btn-primary btn-dialog',
+icon: 'fa fa-folder-o',
+url: 'litestore/litestorecoupon/showcoupon' }
+], formatter: Table.api.formatter.operate}</code></pre>
+
+
+
+<p>（1）按钮图标样式</p>
+
+
+
+<ol class="wp-block-list"><li>修改</li></ol>
+
+
+
+<p>classname: &#8216;btn btn-xs btn-success btn-editone&#8217;,//样式</p>
+
+
+
+<p>icon: &#8216;fa fa fa-pencil&#8217;,//图标</p>
+
+
+
+<p>效果图：</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTMzODIwNjktOGZiOTRmYTMtNTNlOS00M2ZlLThmODMtMjI1ZGYwOGIzN2Q2LnBuZw.png" alt="此图像的alt属性为空；文件名为aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTMzODIwNjktOGZiOTRmYTMtNTNlOS00M2ZlLThmODMtMjI1ZGYwOGIzN2Q2LnBuZw.png"/></figure>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<ol class="wp-block-list" start="2"><li>删除 <code>classname: 'btn btn-xs btn-danger btn-delone',//样式 icon: 'fa fa-trash',//图标 效果图：</code></li></ol>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTM3Njc1NzAtYjA3YWU2MTItZWFjMy00OGNhLThjZDctY2UxM2E2ZWNhYTVmLnBuZw.png" alt="此图像的alt属性为空；文件名为aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTM3Njc1NzAtYjA3YWU2MTItZWFjMy00OGNhLThjZDctY2UxM2E2ZWNhYTVmLnBuZw.png"/></figure>
+
+
+
+<ol class="wp-block-list" start="2"><li>排序 <code>classname: 'btn btn-xs btn-primary btn-dragsort',//样式 icon: 'fa fa-arrows',//图标 效果图： </code></li></ol>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTQzMTk5MTgtZDM3MzJiMDEtNzYwZi00NzU2LWI2MjQtMzA5YTY0YzYwNDk5LnBuZw.png" alt="此图像的alt属性为空；文件名为aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTQzMTk5MTgtZDM3MzJiMDEtNzYwZi00NzU2LWI2MjQtMzA5YTY0YzYwNDk5LnBuZw.png"/></figure>
+
+
+
+<ol class="wp-block-list" start="2"><li><code>文件 classname: 'btn btn-info btn-xs btn-list btn-dialog',//样式 icon: 'fa fa-folder-o',//图标 效果图：</code></li></ol>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTQyNDE0ODYtZDg5Mjk2ZjktN2E3OS00MDhlLTk0YTYtOTRjNjAxMGUyOWFjLnBuZw.png" alt="此图像的alt属性为空；文件名为aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTQyNDE0ODYtZDg5Mjk2ZjktN2E3OS00MDhlLTk0YTYtOTRjNjAxMGUyOWFjLnBuZw.png"/></figure>
+
+
+
+<ol class="wp-block-list" start="2"><li><code>列表 classname: 'btn btn-info btn-xs btn-list btn-dialog',//样式 icon: 'fa fa-list',//图标 效果图： </code></li></ol>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTYzMzg2ODAtNzg0MDIyMTUtYTc1ZC00NDVmLTgzMzYtM2IyODM1MjQzMTdhLnBuZw.png" alt="此图像的alt属性为空；文件名为aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTYzMzg2ODAtNzg0MDIyMTUtYTc1ZC00NDVmLTgzMzYtM2IyODM1MjQzMTdhLnBuZw.png"/></figure>
+
+
+
+<ol class="wp-block-list" start="2"><li><code>AJAX classname: 'btn btn-xs btn-success btn-magic btn-ajax',//样式 icon: 'fa fa-magic',//图标 效果图： </code></li></ol>
+</div></div>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="36" height="36" src="https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTYzMDU4OTUtOTJhNDc3NWMtM2EwOS00MDBmLWFmYTktMGM1M2Q0NDVmMmRiLnBuZw.png" alt="" class="wp-image-84" srcset="https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTYzMDU4OTUtOTJhNDc3NWMtM2EwOS00MDBmLWFmYTktMGM1M2Q0NDVmMmRiLnBuZw.png 36w, https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTYzMDU4OTUtOTJhNDc3NWMtM2EwOS00MDBmLWFmYTktMGM1M2Q0NDVmMmRiLnBuZw-150x150.png 150w, https://haosir5.github.io/wp-content/uploads/2021/12/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQzOTYzMDU4OTUtOTJhNDc3NWMtM2EwOS00MDBmLWFmYTktMGM1M2Q0NDVmMmRiLnBuZw-200x200.png 200w" sizes="(max-width: 36px) 100vw, 36px" /></figure>
+
+
+
+<p><code><code>注释：（ 代表样式：”success,warning,danger,info“ 图标库：<a href="http://fontawesome.dashgame.com/">http://fontawesome.dashgame.com/ </a></code></code></p>
+
+
+
+<p><code><code>样式：\public\assets\css\fastadmin.css 大约 5293行 ） </code></code></p>
+
+
+
+<p>7、<code><code>按钮隐藏 </code></code></p>
+
+
+
+<pre class="wp-block-code"><code> {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate,
+                            buttons:&#91;
+                                {
+                                    name: 'detail',
+                                    text: __(' '),
+                                    title: __(' '),
+                                    classname: 'btn btn-xs btn-primary btn-dialog',
+                                    icon: 'fa fa-list',
+                                    url: 'litestore/litestorecoupon/showcoupon',
+                                    hidden:function(row){
+                                        if(row.status != 2){
+                                            return true;
+                                        }
+                                    }
+                                }
+                            ], formatter: Table.api.formatter.buttons}</code></pre>
+
+
+
+<pre class="wp-block-code"><code>hidden:function(row){
+  if(row.status != 2){
+    return true;
+  }
+}</code></pre>
+
+
+
+<p>注释：（hidden:函数是隐藏函数&nbsp; &nbsp;内部可以加条件&nbsp; 返回true 按钮展示 或者隐藏）</p>
+
+
+
+<p>8. 按钮删除</p>
+
+
+
+<pre class="wp-block-code"><code>{field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate,
+                          formatter: Table.api.formatter.operate,
+                            formatter: function (value, row, index) {
+                                var that = $.extend({}, this);
+                                var table = $(that.table).clone(true);
+                                $(table).data("operate-del", null);//隐藏删除
+                                $(table).data("operate-edit", null);//隐藏编辑
+                                $(table).data("operate-dragsort", null);//隐藏排序
+                                that.table = table;
+                            return Table.api.formatter.operate.call(that, value, row, index);
+                            }
+                        }</code></pre>
+
+
+
+<p>注释（隐藏table 按钮可以用 &nbsp;formatter: function (value, row, index) {})&nbsp; 内部可以加条件）</p>
+
+
+
+<p>还有一种简便的方法（全部隐藏）&nbsp; 对应的 url等于空 即可&nbsp; 例如 del_url:&#8221;;删除按钮就不会展示</p>
+
+
+
+<pre class="wp-block-code"><code>// 初始化表格参数配置
+            Table.api.init({
+                extend: {
+                    index_url: 'test/test/index' + location.search,
+                    add_url: 'test/test/add',
+                    edit_url: 'test/test/edit',
+                    del_url: 'test/test/del',
+                    multi_url: 'test/test/multi',
+                    dragsort_url: ' ',
+                    table: 'test',
+                }
+            });</code></pre>
+
+
+
+<p>9. 按钮弹窗</p>
+
+
+
+<pre class="wp-block-code"><code> {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate,
+                            buttons:&#91;
+                                {
+                                    name: 'detail',
+                                    text: __(' '),
+                                    title: __(' '),
+                                    classname: 'btn btn-xs btn-primary btn-dialog',
+                                    icon: 'fa fa-list',
+                                    url: 'test/test/execute',
+                                    success: function (data) {
+                                        Layer.alert("&lt;textarea class='form-control' cols='60' rows='5'>" + data.result + "&lt;/textarea>", {
+                                            title: __("执行结果"),
+                                            shadeClose: true
+                                        });
+                                        table.bootstrapTable('refresh');
+                                        return false;
+                                    },
+                                    error:function (data) {
+                                        Layer.alert("&lt;textarea class='form-control' cols='60' rows='5'>" + data.result + "&lt;/textarea>", {
+                                            title: __("执行结果"),
+                                            shadeClose: true
+                                        });
+                                        table.bootstrapTable('refresh');
+                                        return false;
+                                    }
+                                }
+                            ], formatter: Table.api.formatter.buttons}</code></pre>
+
+
+
+<p>注释：（success，error 是执行结果&nbsp;）</p>
+
+
+
+<p>10 .按钮传参 自定义按钮传参数&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code> {field: 'operate', title: __('Operate'),
+                            table: table, events: Table.api.events.operate,
+                            buttons:&#91;
+                               
+                                {
+                                    name: 'addtabs',
+                                    text: __('Sale'),
+                                    title: __('Sale'),
+                                    classname: 'btn btn-info btn-xs btn-list btn-addtabs',
+                                    icon: 'fa fa-folder-o',
+                                    url: function (row) {
+                                      return   'offline/ordergoods/goodslist'+row.id;
+                                    }
+                                }
+                            ],
+                            formatter: Table.api.formatter.operate}</code></pre>
+
+
+
+<p><code><code><br>（2）添加、修改 页面样式 </code></code></p>
+
+
+
+<p>1、<code><code>下拉（ build_select） </code></code></p>
+
+
+
+<p><code><code>代码： </code></code></p>
+
+
+
+<pre class="wp-block-code"><code>{:build_select('row&#91;status',&#91;'normal' => ('Normal'), 'hidden' => ('Hidden')],'normal')}</code></pre>
+
+
+
+<p><code><code>效果： </code></code></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQ0NzcxOTA1MTAtYzk2MzBkZjktYzE5MS00MjIyLTk4YzItYjY0ZDcwNjU0OTQwLnBuZw" alt="image.png"/></figure>
+
+
+
+<p></p>
+
+
+
+<p>2、<code><code>单选（ build_radios） </code></code></p>
+
+
+
+<p><code><code>代码： </code></code></p>
+
+
+
+<pre class="wp-block-code"><code>{:build_radios('row&#91;status',&#91;'normal' => __('Normal'), 'hidden' => __('Hidden')],'normal')}</code></pre>
+
+
+
+<p><code><code> 效果： </code></code></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQ0NzczNTY5NTUtYzFmZDZmMDAtMjM2MC00ZjA3LWI1M2MtMTZjZThhZjViZTljLnBuZw" alt="image.png"/></figure>
+
+
+
+<p></p>
+
+
+
+<p>2、<code><code>复选（ build_checkboxs） </code></code></p>
+
+
+
+<p><code><code>代码： </code></code></p>
+
+
+
+<pre class="wp-block-code"><code>{:build_checkboxs('row&#91;status',&#91;'normal' => __('Normal'), 'hidden' => __('Hidden')],'normal')}</code></pre>
+
+
+
+<p><code><code>效果： </code></code></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQ0Nzc0NDQzMDMtN2E3NjM2NjMtMjdiOC00Yjg3LTgxOWUtNmY2ZDJmNTNkYTUwLnBuZw" alt="image.png"/></figure>
+
+
+
+<p>3、<code><code>分类（ build_category_select）</code></code></p>
+
+
+
+<p><code><code>代码： </code></code></p>
+
+
+
+<pre class="wp-block-code"><code>{:build_category_select('row&#91;category_id]','page',$row.category_id)}</code></pre>
+
+
+
+<p><code><code>效果：</code></code></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQ0ODEyMzM5MzYtM2JlMjZjMTAtY2ZhYi00OWM2LTkyZTMtMzI0MTQyZGZmZGYzLnBuZw" alt="image.png"/></figure>
+
+
+
+<p><code><code>4、表格操作按钮栏（ build_toolbar） </code></code></p>
+
+
+
+<p><code><code>代码：</code></code></p>
+
+
+
+<pre class="wp-block-code"><code> {:build_toolbar('refresh,add,edit,del')}</code></pre>
+
+
+
+<p><code><code>效果：</code></code></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQ0ODE3NTEyMjEtYjAwMTk2MzQtMmQxNi00ZWI4LTk5MjctNzRiYzg1Y2ZmOWEyLnBuZw" alt="image.png"/></figure>
+
+
+
+<p><code><code> 注释（按钮 有 以下几种： 'refresh', 'add', 'edit', 'del', 'import'） </code></code></p>
+
+
+
+<p><code><code>页面Heading（ build_heading） </code></code></p>
+
+
+
+<p><code><code>代码： </code></code></p>
+
+
+
+<pre class="wp-block-code"><code>{:build_heading('auth/adminlog')}</code></pre>
+
+
+
+<p><code><code>效果： </code></code></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4ubmxhcmsuY29tL3l1cXVlLzAvMjAxOS9wbmcvNDIzOTUwLzE1NjQ0ODI2MDQ3MDMtOTQ1NGI5OTEtYmRjMi00OGZhLTk1OWEtM2NhMzMzNDA1NzMzLnBuZw" alt="image.png"/></figure>
+
+
+
+<p><code><code>注释（{:build_heading('path',true)} path 必须是存在的 php中封装方法的 文件地址为：\application\admin\common.php )<br></code></code></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin-tab%e5%88%97%e8%a1%a8%e7%9a%84%e6%8c%89%e9%92%ae/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>fastadmin如何在列表操作列区域添加按钮及控制已有按钮显示</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin%e5%a6%82%e4%bd%95%e5%9c%a8%e5%88%97%e8%a1%a8%e6%93%8d%e4%bd%9c%e5%88%97%e5%8c%ba%e5%9f%9f%e6%b7%bb%e5%8a%a0%e6%8c%89%e9%92%ae%e5%8f%8a%e6%8e%a7%e5%88%b6%e5%b7%b2%e6%9c%89%e6%8c%89%e9%92%ae/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin%e5%a6%82%e4%bd%95%e5%9c%a8%e5%88%97%e8%a1%a8%e6%93%8d%e4%bd%9c%e5%88%97%e5%8c%ba%e5%9f%9f%e6%b7%bb%e5%8a%a0%e6%8c%89%e9%92%ae%e5%8f%8a%e6%8e%a7%e5%88%b6%e5%b7%b2%e6%9c%89%e6%8c%89%e9%92%ae/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 05:25:11 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=66</guid>
+
+					<description><![CDATA[在FastAdmin中，我们可以&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>在FastAdmin中，我们可以一键生成CRUD数据，目前最新版本生成CRUD数据已经支持<code>权限控制按钮显示</code>。一般情况下我们生成的列表在操作区域都会存在<code>排序、编辑、删除</code>三个按钮，如下图</p>
+
+
+
+<p><a href="https://cdn.forum.fastadmin.net/uploads/201708/15/1a29f90a301155e9924b9745801fde4b">https://cdn.forum.fastadmin.net/uploads/201708/15/1a29f90a301155e9924b9745801fde4b</a></p>
+
+
+
+<p><br>在这里简单介绍一下如果添加和修改这里的按钮显示，同时根据权限控制它的显示。这里我们以<code>单页管理</code>为示例，首先打开<code>/public/assets/js/backend/page.js</code>这个文件，找到如下行</p>
+
+
+
+<pre class="wp-block-code"><code>{field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}</code></pre>
+
+
+
+<p>我们修改一下该行数据，改成</p>
+
+
+
+<pre class="wp-block-code"><code>{
+    field: 'operate', title: __('Operate'), table: table,
+    buttons: &#91;
+        {name: 'detail', text: '详情', title: '详情', icon: 'fa fa-list', classname: 'btn btn-xs btn-primary btn-dialog', url: 'page/detail'}
+    ],
+    events: Table.api.events.operate, formatter: Table.api.formatter.operate
+}</code></pre>
+
+
+
+<p>其中主要增加的部分是</p>
+
+
+
+<pre class="wp-block-code"><code>buttons: &#91;
+    {name: 'detail', text: '详情', title: '详情', icon: 'fa fa-list', classname: 'btn btn-xs btn-primary btn-dialog', url: 'page/detail'}
+],</code></pre>
+
+
+
+<p>这段代码意思是配置一个按钮数组，这里我们只配置了一个数据，效果图如下。在开发过程中可以按照需求添加多个按钮的。<br></p>
+
+
+
+<p><a href="https://cdn.forum.fastadmin.net/uploads/201708/15/fafe5eb2aeff9bad77425f90b8a97ac7">fafe5eb2aeff9bad77425f90b8a97ac7 (1105×333) (fastadmin.net)</a></p>
+
+
+
+<p><br>下面简单介绍一下几个配置的含义<br><code>name</code>:唯一标识,其中<code>index/add/edit/del/multi/dragsort</code>这几个框架已经暂用,如果使用将会覆盖已有属性<br><code>text</code>:按钮上的文本，可以为空时，为空时按钮将不显示文字信息，为空时最好配置上<code>icon</code>的值<br><code>title</code>:按钮的标题信息，当鼠标移到上面时显示的文字，同时作为<code>dialog</code>弹出窗时的标题信息<br><code>icon</code>:按钮上的按钮信息，可使用<code>Font-awesome</code>的按钮，当<code>text</code>为空时请务必填写该值<br><code>classname</code>:按钮的<code>class</code>标签的值，建议<code>btn btn-xs</code>为必选，这样可以和其它按钮更加协调搭配，可搭配用的按钮颜色有<code>btn-primary、btn-success、btn-danger、btn-warning</code>，还有额外的功能class如<code>btn-dialog、btn-addtabs、btn-ajax</code>，下面会详细介绍。<br><code>url</code>&nbsp;: 按钮点击后跳转的链接，可选且可使用相对链接。为空时按钮的链接为<code>javascript:;</code><br><code>dropdown</code>:按钮分组名称，用于将按钮分组下拉<br><code>refresh</code>:是否在执行完事件后刷新列表，常配合<code>classname:'btn-ajax'</code>使用<br><code>confirm</code>:提示确认信息，常配合<code>classname</code>属性为<code>btn-ajax</code>、<code>btn-dialog</code>、<code>btn-addtabs</code>使用<br><code>extend</code>:扩展属性，用于扩展按钮的自定义属性<br><code>hidden</code>:控制按钮是否隐藏属性,支持<code>function</code><br><code>visible</code>:控制按钮是否显示属性,支持<code>function</code><br><code>disable</code>:控制按钮是否禁用属性,支持<code>function</code></p>
+
+
+
+<h2 class="wp-block-heading">功能Class</h2>
+
+
+
+<p><code>btn-dialog</code>&nbsp;: 点击按钮后将会以弹窗的形式打开url这个链接<br><code>btn-addtabs</code>&nbsp;: 点击按钮后将会在顶部选项卡中新增一个选项卡并跳转<br><code>btn-ajax</code>&nbsp;: 点击按钮后将会发起一个Ajax请求</p>
+
+
+
+<h2 class="wp-block-heading">根据权限控制按钮显示</h2>
+
+
+
+<p>经过上述的操作，添加按钮已经成功了，如何根据权限控制按钮的显示呢？这里我们需要找到<code>index.html</code>这个视图，其中table的内容如下</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;table id="table" class="table table-striped table-bordered table-hover" 
+       data-operate-edit="{:$auth->check('page/edit')}" 
+       data-operate-del="{:$auth->check('page/del')}" 
+       width="100%">
+&lt;/table></code></pre>
+
+
+
+<p>其中应该很显示可以看到我们给表格添加了额外的data属性，默认添加了<code>edit、del</code>这两个权限检测。<br>如果需要对<code>detail</code>按钮进行权限控制，可添加<code>data-operate-detail</code>属性，如下</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;table id="table" class="table table-striped table-bordered table-hover" 
+       data-operate-edit="{:$auth->check('page/edit')}" 
+       data-operate-del="{:$auth->check('page/del')}" 
+       data-operate-detail="{:$auth->check('page/detail')}" 
+       width="100%">
+&lt;/table></code></pre>
+
+
+
+<p>其中<code>data-operate-detail</code>这里的<code>detail</code>对应的就是我们按钮中的<code>name</code>值，而<code>{:$auth-&gt;check('page/detail')}</code>中的<code>page/detail</code>对应的就是我们方法的控制器和方法。<br>只需要上面这一行代码，如果管理员没有<code>page/detail</code>这个权限，则<code>detail</code>这个按钮就不会显示了。</p>
+
+
+
+<p>如果需要隐藏默认的<code>编辑</code>或<code>删除</code>按钮，可以将相应的值置为空即可，如下：</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;table id="table" class="table table-striped table-bordered table-hover" 
+       data-operate-edit="" 
+       data-operate-del="" 
+       width="100%">
+&lt;/table></code></pre>
+
+
+
+<p>看完以后，是不是发现好简单了~~</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin%e5%a6%82%e4%bd%95%e5%9c%a8%e5%88%97%e8%a1%a8%e6%93%8d%e4%bd%9c%e5%88%97%e5%8c%ba%e5%9f%9f%e6%b7%bb%e5%8a%a0%e6%8c%89%e9%92%ae%e5%8f%8a%e6%8e%a7%e5%88%b6%e5%b7%b2%e6%9c%89%e6%8c%89%e9%92%ae/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>FastAdmin修改表的注释后怎样修改列表栏的名称</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin%e4%bf%ae%e6%94%b9%e8%a1%a8%e7%9a%84%e6%b3%a8%e9%87%8a%e5%90%8e%e6%80%8e%e6%a0%b7%e4%bf%ae%e6%94%b9%e5%88%97%e8%a1%a8%e6%a0%8f%e7%9a%84%e5%90%8d%e7%a7%b0/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin%e4%bf%ae%e6%94%b9%e8%a1%a8%e7%9a%84%e6%b3%a8%e9%87%8a%e5%90%8e%e6%80%8e%e6%a0%b7%e4%bf%ae%e6%94%b9%e5%88%97%e8%a1%a8%e6%a0%8f%e7%9a%84%e5%90%8d%e7%a7%b0/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 05:20:54 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=64</guid>
+
+					<description><![CDATA[fastadmin中新建了一张表&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>fastadmin中新建了一张表，已经crud并且生成对应的菜单，然后更改某个字段的注释，发现后台的列表页的名称没有变。</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20190408172248200.png" alt=""/></figure>
+
+
+
+<p>解决方法：在admin&#8212;->lang&#8212;> zh-cn&#8212;>对应的.php文件更改.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20190408172705759.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsZXJ0UWlhbg==,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20190408172820144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FsZXJ0UWlhbg==,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>最后清除一下后台缓存，就可以了 </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin%e4%bf%ae%e6%94%b9%e8%a1%a8%e7%9a%84%e6%b3%a8%e9%87%8a%e5%90%8e%e6%80%8e%e6%a0%b7%e4%bf%ae%e6%94%b9%e5%88%97%e8%a1%a8%e6%a0%8f%e7%9a%84%e5%90%8d%e7%a7%b0/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>FastAdmin在线命令管理增加后台的菜单，功能</title>
+		<link>https://haosir5.github.io/2021/12/24/fastadmin%e5%9c%a8%e7%ba%bf%e5%91%bd%e4%bb%a4%e7%ae%a1%e7%90%86%e5%a2%9e%e5%8a%a0%e5%90%8e%e5%8f%b0%e7%9a%84%e8%8f%9c%e5%8d%95%ef%bc%8c%e5%8a%9f%e8%83%bd/</link>
+					<comments>https://haosir5.github.io/2021/12/24/fastadmin%e5%9c%a8%e7%ba%bf%e5%91%bd%e4%bb%a4%e7%ae%a1%e7%90%86%e5%a2%9e%e5%8a%a0%e5%90%8e%e5%8f%b0%e7%9a%84%e8%8f%9c%e5%8d%95%ef%bc%8c%e5%8a%9f%e8%83%bd/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Fri, 24 Dec 2021 05:18:19 +0000</pubDate>
+				<category><![CDATA[Fastadmin]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=62</guid>
+
+					<description><![CDATA[1.先安装后台《在线命令管理》，&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1.先安装后台《在线命令管理》，新版是有这个插件的，没有的话，看官方手册，可以在cmd里面操作，我这里就不写cmd的操作了，</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517152632912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>2.创建数据表，我这边简单创建一个博客表</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517152745759.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>3.先生成CRUD，选择刚刚新建的blog表</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517153000696.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>4.定义控制器名和模型名称，建议和表名一样，选择显示字段的这里，一般就默认就行了，切记，自己选的时候，ID字段一定要选，不然就执行不了 删除 和修改操作，因为没有主键ID</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517153355689.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>5.字段显示的样式选择 img  add_time  status content 这都会生成相对于的样式这个功能很牛皮</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517153438677.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>6.生成命令行，再  立即执行， 生成相对应的 C层 和 M层的php文件</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/2021051715361610.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>7.生成后台菜单  控制器设置里面选择刚刚生成的php文件，然后选择生成命令行，再点击 立即执行。然后再菜单管理里面把名字修改一下</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517153719799.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517153831146.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>8.相对应的博客后台的增删改查就全部可以ok了看一下 增删改查的页面</p>
+
+
+
+<p>1、增</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517153933449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>2、改</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517153947864.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+
+
+
+<p>3、删</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img-blog.csdnimg.cn/20210517154048844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h6aGFpcnVudGFv,size_16,color_FFFFFF,t_70" alt=""/></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/24/fastadmin%e5%9c%a8%e7%ba%bf%e5%91%bd%e4%bb%a4%e7%ae%a1%e7%90%86%e5%a2%9e%e5%8a%a0%e5%90%8e%e5%8f%b0%e7%9a%84%e8%8f%9c%e5%8d%95%ef%bc%8c%e5%8a%9f%e8%83%bd/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>个人博客网站 &#8211; 豪先生的博客</title>
+	<atom:link href="https://haosir5.github.io/category/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:49 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+
+<image>
+	<url>https://haosir5.github.io/wp-content/uploads/2021/12/cropped-user_img-1-32x32.jpg</url>
+	<title>个人博客网站 &#8211; 豪先生的博客</title>
+	<link>https://haosir5.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Wordress博客使插件添加音乐播放器</title>
+		<link>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e4%bd%bf%e6%8f%92%e4%bb%b6%e6%b7%bb%e5%8a%a0%e9%9f%b3%e4%b9%90%e6%92%ad%e6%94%be%e5%99%a8/</link>
+					<comments>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e4%bd%bf%e6%8f%92%e4%bb%b6%e6%b7%bb%e5%8a%a0%e9%9f%b3%e4%b9%90%e6%92%ad%e6%94%be%e5%99%a8/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:04:36 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<category><![CDATA[Floating Window Music Player]]></category>
+		<category><![CDATA[Wordress]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=48</guid>
+
+					<description><![CDATA[1、之前是使用Aplayer播放&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1、之前是使用Aplayer播放器来播放音乐，好看是好看但是要自己动手解决Pjax问题(就是页面跳转会使音乐重新播放)</p>
+
+
+
+<p>2、接下来我介绍我发现的另一个音乐播放器   <span class="has-inline-color has-vivid-red-color">Floating Window Music Playe</span>r </p>
+
+
+
+<p>他不用去百度下载，可以直接在Wordress的插件中下载</p>
+
+
+
+<p>而且里面自带Ajax解决方法(就是页面跳转不会使音乐重新播放)</p>
+
+
+
+<p>插件后台效果图如下:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/09/7-1024x869.png" alt="此图片的alt属性为空；文件名为7-1024x869.png"/></figure>
+
+
+
+<p>3、前台页面效果图</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/09/8-1024x491.png" alt="此图片的alt属性为空；文件名为8-1024x491.png"/></figure>
+
+
+
+<p>4、我在这里使用的是<span class="has-inline-color has-vivid-red-color">网易云音乐</span>，把你喜欢的<span class="has-inline-color has-vivid-red-color">歌单网址</span>放到插件后台的  <span class="has-inline-color has-vivid-red-color">获取代码及分类</span>  前面的输入框 中 然后点击   获取代码及分类   然后下面出现代码   然后再点击<span class="has-inline-color has-vivid-red-color">添加信息</span>  就可以了，下面功能自己可以看着选</p>
+
+
+
+<p>5、他可以添加多个歌单，特别好用(我小白表示大佬NB)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e4%bd%bf%e6%8f%92%e4%bb%b6%e6%b7%bb%e5%8a%a0%e9%9f%b3%e4%b9%90%e6%92%ad%e6%94%be%e5%99%a8/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>网易云音乐播放器</title>
+		<link>https://haosir5.github.io/2021/12/08/%e7%bd%91%e6%98%93%e4%ba%91%e9%9f%b3%e4%b9%90%e6%92%ad%e6%94%be%e5%99%a8/</link>
+					<comments>https://haosir5.github.io/2021/12/08/%e7%bd%91%e6%98%93%e4%ba%91%e9%9f%b3%e4%b9%90%e6%92%ad%e6%94%be%e5%99%a8/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:03:01 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<category><![CDATA[网易云播放器]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=46</guid>
+
+					<description><![CDATA[1、去百度搜索网易云官网:网易云&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1、去百度搜索网易云官网:<a href="https://music.163.com/">网易云音乐 (163.com)</a></p>
+
+
+
+<p>2、登录用户</p>
+
+
+
+<p>3、找一个自己喜欢的听的歌单</p>
+
+
+
+<p>4、然后点击喜欢的歌单进去</p>
+
+
+
+<p>5、再点击生成外链播放器</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/09/6-1.png" alt="此图片的alt属性为空；文件名为6-1.png"/></figure>
+
+
+
+<p>6、跳到新的页面，还出现网易云音乐插件</p>
+
+
+
+<p>里面有可以自己选的iframe代码</p>
+
+
+
+<p>选个自己喜欢的使用，放到网页就好了</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/%e7%bd%91%e6%98%93%e4%ba%91%e9%9f%b3%e4%b9%90%e6%92%ad%e6%94%be%e5%99%a8/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Wordress博客网站查看文章时显示进度条</title>
+		<link>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e6%9f%a5%e7%9c%8b%e6%96%87%e7%ab%a0%e6%97%b6%e6%98%be%e7%a4%ba%e8%bf%9b%e5%ba%a6%e6%9d%a1/</link>
+					<comments>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e6%9f%a5%e7%9c%8b%e6%96%87%e7%ab%a0%e6%97%b6%e6%98%be%e7%a4%ba%e8%bf%9b%e5%ba%a6%e6%9d%a1/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:01:52 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<category><![CDATA[Post Reading Progress]]></category>
+		<category><![CDATA[Wordress]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=44</guid>
+
+					<description><![CDATA[可以在Wordress的插件里面&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>可以在Wordress的插件里面下载 <span class="has-inline-color has-vivid-red-color">Post Reading Progress</span> 插件</p>
+
+
+
+<p>安装完之后，可以在后台的： 设置-&gt;读取进度条-&gt;中设置</p>
+
+
+
+<p>如下图</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/09/5.png" alt="此图片的alt属性为空；文件名为5.png"/></figure>
+
+
+
+<p>我们就可以设置进度条相对应的功能</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e6%9f%a5%e7%9c%8b%e6%96%87%e7%ab%a0%e6%97%b6%e6%98%be%e7%a4%ba%e8%bf%9b%e5%ba%a6%e6%9d%a1/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Wordress博客怎么放到自己的网站里面</title>
+		<link>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e6%80%8e%e4%b9%88%e6%94%be%e5%88%b0%e8%87%aa%e5%b7%b1%e7%9a%84%e7%bd%91%e7%ab%99%e9%87%8c%e9%9d%a2/</link>
+					<comments>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e6%80%8e%e4%b9%88%e6%94%be%e5%88%b0%e8%87%aa%e5%b7%b1%e7%9a%84%e7%bd%91%e7%ab%99%e9%87%8c%e9%9d%a2/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 07:59:46 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<category><![CDATA[Wordress]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=40</guid>
+
+					<description><![CDATA[1、下载Wordress 去官网&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p><br>1、下载Wordress</p>
+
+
+
+<p>去官网下载Wordress安装包</p>
+
+
+
+<p>官网下载网址：<a href="https://wpchina.org/downloads/">下载 &#8211; WordPress中文网 (wpchina.org)</a></p>
+
+
+
+<p>2、放到宝塔上面</p>
+
+
+
+<p>我在这里使用的是宝塔，在你的网站域名文件，打开放进你刚才下载的Wordress文件，</p>
+
+
+
+<p>然后再打开你的网站，就可以按步骤开始安装Wordress了</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e6%80%8e%e4%b9%88%e6%94%be%e5%88%b0%e8%87%aa%e5%b7%b1%e7%9a%84%e7%bd%91%e7%ab%99%e9%87%8c%e9%9d%a2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>博客网站怎么添加看板娘</title>
+		<link>https://haosir5.github.io/2021/12/08/%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e6%80%8e%e4%b9%88%e6%b7%bb%e5%8a%a0%e7%9c%8b%e6%9d%bf%e5%a8%98/</link>
+					<comments>https://haosir5.github.io/2021/12/08/%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e6%80%8e%e4%b9%88%e6%b7%bb%e5%8a%a0%e7%9c%8b%e6%9d%bf%e5%a8%98/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 07:56:59 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=38</guid>
+
+					<description><![CDATA[简单的加人3行代码即可 我是放在&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>简单的加人3行代码即可</p>
+
+
+
+<p>我是放在Wordress主题的sidebar.php(之前是放在footer.php)里面</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!--看板娘-->
+&lt;script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js">&lt;/script>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+&lt;script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js">&lt;/script></code></pre>
+
+
+
+<p>这个是大佬封装好的在线网址，参考大佬的网址在这里:<a href="https://zhaoolee.com/GBlog/2019/07/04/live2d/">3行代码 为网站添加萌萌哒看板娘 | zhaoolee的博客</a></p>
+
+
+
+<p>定制看板娘的语录(调教你的看板娘)</p>
+
+
+
+<p>1.从github中下载项目: <a rel="noreferrer noopener" href="https://github.com/stevenjoezhang/live2d-widget" target="_blank">https://github.com/stevenjoezhang/live2d-widget</a></p>
+
+
+
+<p>2.更改waifu-tip.json里面的内容</p>
+
+
+
+<p>3.更改autoload.js的引入位置将<code>&lt;script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js">&lt;/script></code> 改成自己的如果实在不会玩, 可以参考我的代码, 开源地址: <a rel="noreferrer noopener" href="https://github.com/zhaoolee/GBlog" target="_blank">https://github.com/zhaoolee/GBlog</a></p>
+
+
+
+<p></p>
+
+
+
+<p>放进去之后就可以在左下角看见你的看板娘了</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e6%80%8e%e4%b9%88%e6%b7%bb%e5%8a%a0%e7%9c%8b%e6%9d%bf%e5%a8%98/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>如何使用Aplayer播放器</title>
+		<link>https://haosir5.github.io/2021/12/08/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8/</link>
+					<comments>https://haosir5.github.io/2021/12/08/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 07:53:24 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<category><![CDATA[Aplayer]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=35</guid>
+
+					<description><![CDATA[Aplayer 一、部署 1、A&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p><a href="http://www.haosirl.top/index.php/tag/aplayer/">Aplayer</a></p>
+
+
+
+<p>一、部署</p>
+
+
+
+<p>1、Aplayer</p>
+
+
+
+<p>官网体验网址：<a rel="noreferrer noopener" href="https://aplayer.js.org/#/" target="_blank">https://aplayer.js.org/</a></p>
+
+
+
+<p>Aplayer的GitHub网址： <a rel="noreferrer noopener" href="https://github.com/MoePlayer/APlayer" target="_blank">https://github.com/MoePlayer/APlayer</a></p>
+
+
+
+<p>中文文档手册网址：<a href="https://aplayer.js.org/#/zh-Hans/">首页 &#8211; APlayer</a></p>
+
+
+
+<p>使用方法很简单，加载Aplayer的js和css，在想要展先的位置调用即可。Aplayer支持很多模式，上图展示的效果为<strong>吸底模式</strong>，就是在网页的页面最左下角展示。本文以<strong>吸底模式</strong>为例进行说明，如果想采用其它模式，可以根据文档手册修改代码。</p>
+
+
+
+<p></p>
+
+
+
+<p>2、<span class="has-inline-color has-luminous-vivid-orange-color">Meting</span></p>
+
+
+
+<p>如果只使用Aplayer，那么需要指定音乐的图片地址，mp4地址，歌词等，用着不是很方便，</p>
+
+
+
+<p>这时就可以使用<strong>Meting</strong>作为辅助：<a rel="noreferrer noopener" href="https://github.com/metowolf/MetingJS" target="_blank">https://github.com/metowolf/MetingJS</a></p>
+
+
+
+<p></p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color">Meting</span>为<span class="has-inline-color has-vivid-red-color">Aplayer</span>提供了<span class="has-inline-color has-vivid-red-color">网易云音乐</span>的API接口，只要获得网易云音乐歌单的ID，就可以自动加载歌单里所有的歌曲，直接调用，方便很多，当然除了网易云音乐的API，还有其他的接口。</p>
+
+
+
+<p>我在这里提供在线的Aplayer、Meting文件</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;!-- require APlayer -->
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+&lt;script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js">&lt;/script>
+ &lt;!--require MetingJS -->
+&lt;script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js">&lt;/script></code></pre>
+
+
+
+<p>然后Aplayer播放器容器是下面代码</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;meting-js
+        id="6954857205"
+        lrc-type="0"
+        server="netease"
+        order="list"
+        type="playlist"
+        fixed="true"
+        list-olded="true"
+        autoplay="true"
+        mutex="true"
+        >
+&lt;/meting-js></code></pre>
+
+
+
+<p>把上面2个框的代码放进你的网页就可以使用了，第二个的id我在这里使用的是网易云音乐的id，如下面图片内容</p>
+
+
+
+<p>建议用网页版网易云的网址中的id，用客户端的好像会显示不了</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/09/2-1024x719.png" alt="此图片的alt属性为空；文件名为2-1024x719.png"/></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Wordress博客网站使用Aplayer播放器与Pjax解决网页跳转时音乐重新播放</title>
+		<link>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8%e4%b8%8epjax%e8%a7%a3%e5%86%b3%e7%bd%91%e9%a1%b5%e8%b7%b3%e8%bd%ac%e6%97%b6%e9%9f%b3%e4%b9%90%e9%87%8d/</link>
+					<comments>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8%e4%b8%8epjax%e8%a7%a3%e5%86%b3%e7%bd%91%e9%a1%b5%e8%b7%b3%e8%bd%ac%e6%97%b6%e9%9f%b3%e4%b9%90%e9%87%8d/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 07:41:29 +0000</pubDate>
+				<category><![CDATA[个人博客网站]]></category>
+		<category><![CDATA[Aplayer]]></category>
+		<category><![CDATA[pjax]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=32</guid>
+
+					<description><![CDATA[在Wordress的主题里面的h&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>在Wordress的主题里面的header.php里面放入我给的3行代码即可</p>
+
+
+
+<p>如果不知道header.php在哪里，可以参考我的路径：</p>
+
+
+
+<p><span class="has-inline-color has-vivid-cyan-blue-color">wp-content/themes/dashscroll/header.php</span></p>
+
+
+
+<p></p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color"> wp-content</span>/          </p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color">themes</span>/       Wordress的网页主题</p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color">dashscroll</span>/    主题     博主当前使用的主题</p>
+
+
+
+<p><span class="has-inline-color has-vivid-red-color">header.php</span>        头部文件</p>
+
+
+
+<p></p>
+
+
+
+<p>在<span class="has-inline-color has-vivid-red-color">header.php</span>里面中的<span class="has-inline-color has-vivid-red-color">body</span>前面添加下面代码</p>
+
+
+
+<p><span class="has-inline-color has-luminous-vivid-amber-color">注意</span>:jquery.js要在jquery.pjax.js前面</p>
+
+
+
+<pre class="wp-block-code"><code>
+&lt;!--jquery-->
+&lt;script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">&lt;/script>
+&lt;!--jquery.pjax.js-->
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.0/jquery.pjax.js">&lt;/script>
+&lt;!--替换的容器-->
+&lt;script type="text/javascript">
+    $(document).pjax('a', '#page', {fragment:'#page', timeout:8000});
+&lt;/script></code></pre>
+
+
+
+<p>播放器重新播放，但是还是有一些问题存在，比如评论发送时，就会使播放器重新刷新播放，(我也是一名小白，以后解决了就相继发出来)</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e4%bd%bf%e7%94%a8aplayer%e6%92%ad%e6%94%be%e5%99%a8%e4%b8%8epjax%e8%a7%a3%e5%86%b3%e7%bd%91%e9%a1%b5%e8%b7%b3%e8%bd%ac%e6%97%b6%e9%9f%b3%e4%b9%90%e9%87%8d/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

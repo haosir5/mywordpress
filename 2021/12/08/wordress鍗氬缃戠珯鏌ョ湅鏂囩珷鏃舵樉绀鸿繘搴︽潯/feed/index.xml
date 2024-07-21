@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	「Wordress博客网站查看文章时显示进度条」的评论	</title>
+	<atom:link href="https://haosir5.github.io/2021/12/08/wordress%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%9F%A5%E7%9C%8B%E6%96%87%E7%AB%A0%E6%97%B6%E6%98%BE%E7%A4%BA%E8%BF%9B%E5%BA%A6%E6%9D%A1/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/2021/12/08/wordress%e5%8d%9a%e5%ae%a2%e7%bd%91%e7%ab%99%e6%9f%a5%e7%9c%8b%e6%96%87%e7%ab%a0%e6%97%b6%e6%98%be%e7%a4%ba%e8%bf%9b%e5%ba%a6%e6%9d%a1/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+</channel>
+</rss>

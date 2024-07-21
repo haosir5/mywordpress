@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Vue &#8211; 豪先生的博客</title>
+	<atom:link href="https://haosir5.github.io/category/vue/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+
+<image>
+	<url>https://haosir5.github.io/wp-content/uploads/2021/12/cropped-user_img-1-32x32.jpg</url>
+	<title>Vue &#8211; 豪先生的博客</title>
+	<link>https://haosir5.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>关于Vue2cli使用Vant、element-ui插件需要关注的事项</title>
+		<link>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8evue2cli%e4%bd%bf%e7%94%a8vant%e3%80%81element-ui%e6%8f%92%e4%bb%b6%e9%9c%80%e8%a6%81%e5%85%b3%e6%b3%a8%e7%9a%84%e4%ba%8b%e9%a1%b9/</link>
+					<comments>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8evue2cli%e4%bd%bf%e7%94%a8vant%e3%80%81element-ui%e6%8f%92%e4%bb%b6%e9%9c%80%e8%a6%81%e5%85%b3%e6%b3%a8%e7%9a%84%e4%ba%8b%e9%a1%b9/#comments</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:07:52 +0000</pubDate>
+				<category><![CDATA[Vue]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=52</guid>
+
+					<description><![CDATA[Vue2cli不能直接使用Van&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>Vue2cli不能直接使用Vant组件的样式，我们可以通过安装111来解决，过程如下</p>
+
+
+
+<p>1、安装 <code>babel-plugin-import</code></p>
+
+
+
+<pre class="wp-block-code"><code>cnpm install babel-plugin-import --save</code></pre>
+
+
+
+<p>2、在   .babelrc文件中增加以下代码</p>
+
+
+
+<p> [&#8220;import&#8221;,{&#8220;libraryName&#8221;:&#8221;vant&#8221;,&#8221;style&#8221;:true}]</p>
+
+
+
+<p><code>.babelrc</code>文件全部代码如下:</p>
+
+
+
+<pre class="wp-block-code"><code>{
+  "presets": &#91;
+    &#91;"env", {
+      "modules": false,
+      "targets": {
+        "browsers": &#91;"> 1%", "last 2 versions", "not ie &lt;= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": &#91;"transform-vue-jsx", "transform-runtime", &#91;"import", {
+    "libraryName": "vant",
+    "style": true
+  }]]
+}</code></pre>
+
+
+
+<p>element-ui也是一样，要安装另外一个插件</p>
+
+
+
+<p>1、安装<code><span class="has-inline-color has-vivid-red-color">babel-plugin-component</span></code></p>
+
+
+
+<pre class="wp-block-code"><code>sudo cnpm install babel-plugin-component  --save</code></pre>
+
+
+
+<p>2、在vue项目的<code>.babelrc</code>文件中增加如下JSON</p>
+
+
+
+<pre class="wp-block-code"><code>"plugins": &#91;
+    &#91;
+    "component",
+    {
+    "libraryName": "element-ui",
+    "styleLibraryName": "theme-chalk"
+    }
+    ]
+  ]</code></pre>
+
+
+
+<p>3、如果仅做如上两步骤会报错，具体参考这篇文章</p>
+
+
+
+<p><a href="https://www.jianshu.com/p/24b437ac3b48">解决vue使用element-ui时，报xxx/element-ui/lib/theme-chalk/fonts/element-icons.ttf的问题 &#8211; 简书 (jianshu.com)</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/%e5%85%b3%e4%ba%8evue2cli%e4%bd%bf%e7%94%a8vant%e3%80%81element-ui%e6%8f%92%e4%bb%b6%e9%9c%80%e8%a6%81%e5%85%b3%e6%b3%a8%e7%9a%84%e4%ba%8b%e9%a1%b9/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Vue2创建项目过程</title>
+		<link>https://haosir5.github.io/2021/12/08/vue2%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e8%bf%87%e7%a8%8b/</link>
+					<comments>https://haosir5.github.io/2021/12/08/vue2%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e8%bf%87%e7%a8%8b/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:05:45 +0000</pubDate>
+				<category><![CDATA[Vue]]></category>
+		<category><![CDATA[VUe]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=50</guid>
+
+					<description><![CDATA[1、vue2cli创建项目命令 &#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1、vue2cli创建项目命令</p>
+
+
+
+<pre class="wp-block-code"><code>vue init webpack  test    //test是项目名称</code></pre>
+
+
+
+<p>2、选择如下图配置(看个人情况选择，博主的选择供参考)</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/12/QQ%E5%9B%BE%E7%89%8720211208140505.png" alt="此图片的alt属性为空；文件名为QQ图片20211208140505.png"/></figure>
+
+
+
+<p>3、这样就安装完成了</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/vue2%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e8%bf%87%e7%a8%8b/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Vue2、Vue3cli怎么打包</title>
+		<link>https://haosir5.github.io/2021/12/08/vue2%e3%80%81vue3cli%e6%80%8e%e4%b9%88%e6%89%93%e5%8c%85/</link>
+					<comments>https://haosir5.github.io/2021/12/08/vue2%e3%80%81vue3cli%e6%80%8e%e4%b9%88%e6%89%93%e5%8c%85/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:00:54 +0000</pubDate>
+				<category><![CDATA[Vue]]></category>
+		<category><![CDATA[VUe]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=42</guid>
+
+					<description><![CDATA[Vue在打包上意外的简单，只需要&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>Vue在打包上意外的简单，只需要你在文件命令行内输入</p>
+
+
+
+<pre class="wp-block-code"><code>npm run build</code></pre>
+
+
+
+<p>就可以打包了，打包完之后会出现一个dist文件，</p>
+
+
+
+<p>这个文件就是我们的网页了,</p>
+
+
+
+<p>就可以到服务器上配置网页即可</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/vue2%e3%80%81vue3cli%e6%80%8e%e4%b9%88%e6%89%93%e5%8c%85/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

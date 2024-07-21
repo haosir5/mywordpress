@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VUe &#8211; 豪先生的博客</title>
+	<atom:link href="https://haosir5.github.io/tag/vue/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+
+<image>
+	<url>https://haosir5.github.io/wp-content/uploads/2021/12/cropped-user_img-1-32x32.jpg</url>
+	<title>VUe &#8211; 豪先生的博客</title>
+	<link>https://haosir5.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Vue2创建项目过程</title>
+		<link>https://haosir5.github.io/2021/12/08/vue2%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e8%bf%87%e7%a8%8b/</link>
+					<comments>https://haosir5.github.io/2021/12/08/vue2%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e8%bf%87%e7%a8%8b/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:05:45 +0000</pubDate>
+				<category><![CDATA[Vue]]></category>
+		<category><![CDATA[VUe]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=50</guid>
+
+					<description><![CDATA[1、vue2cli创建项目命令 &#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>1、vue2cli创建项目命令</p>
+
+
+
+<pre class="wp-block-code"><code>vue init webpack  test    //test是项目名称</code></pre>
+
+
+
+<p>2、选择如下图配置(看个人情况选择，博主的选择供参考)</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="http://www.haosirl.top/wp-content/uploads/2021/12/QQ%E5%9B%BE%E7%89%8720211208140505.png" alt="此图片的alt属性为空；文件名为QQ图片20211208140505.png"/></figure>
+
+
+
+<p>3、这样就安装完成了</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/vue2%e5%88%9b%e5%bb%ba%e9%a1%b9%e7%9b%ae%e8%bf%87%e7%a8%8b/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Vue2、Vue3cli怎么打包</title>
+		<link>https://haosir5.github.io/2021/12/08/vue2%e3%80%81vue3cli%e6%80%8e%e4%b9%88%e6%89%93%e5%8c%85/</link>
+					<comments>https://haosir5.github.io/2021/12/08/vue2%e3%80%81vue3cli%e6%80%8e%e4%b9%88%e6%89%93%e5%8c%85/#respond</comments>
+		
+		<dc:creator><![CDATA[haosirl]]></dc:creator>
+		<pubDate>Wed, 08 Dec 2021 08:00:54 +0000</pubDate>
+				<category><![CDATA[Vue]]></category>
+		<category><![CDATA[VUe]]></category>
+		<guid isPermaLink="false">https://haosir5.github.io/?p=42</guid>
+
+					<description><![CDATA[Vue在打包上意外的简单，只需要&#46;&#46;&#46;]]></description>
+										<content:encoded><![CDATA[
+<p>Vue在打包上意外的简单，只需要你在文件命令行内输入</p>
+
+
+
+<pre class="wp-block-code"><code>npm run build</code></pre>
+
+
+
+<p>就可以打包了，打包完之后会出现一个dist文件，</p>
+
+
+
+<p>这个文件就是我们的网页了,</p>
+
+
+
+<p>就可以到服务器上配置网页即可</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://haosir5.github.io/2021/12/08/vue2%e3%80%81vue3cli%e6%80%8e%e4%b9%88%e6%89%93%e5%8c%85/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

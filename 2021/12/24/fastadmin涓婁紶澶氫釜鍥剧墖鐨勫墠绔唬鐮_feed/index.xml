@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	「Fastadmin上传多个图片的前端代码」的评论	</title>
+	<atom:link href="https://haosir5.github.io/2021/12/24/fastadmin%E4%B8%8A%E4%BC%A0%E5%A4%9A%E4%B8%AA%E5%9B%BE%E7%89%87%E7%9A%84%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81/feed/" rel="self" type="application/rss+xml" />
+	<link>https://haosir5.github.io/2021/12/24/fastadmin%e4%b8%8a%e4%bc%a0%e5%a4%9a%e4%b8%aa%e5%9b%be%e7%89%87%e7%9a%84%e5%89%8d%e7%ab%af%e4%bb%a3%e7%a0%81/</link>
+	<description>豪先生</description>
+	<lastBuildDate>Thu, 13 Apr 2023 10:42:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6</generator>
+</channel>
+</rss>
